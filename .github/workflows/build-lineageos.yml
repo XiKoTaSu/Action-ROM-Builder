@@ -117,7 +117,7 @@ jobs:
         export CCACHE_DIR=ccache/
         ccache -M 50G
         lunch ${{ github.event.inputs.MAKEFILE_NAME }}
-        m otapackage
+        m vendorimage
       working-directory: ${{ steps.pwd.outputs.workspace-folder }}
       continue-on-error: true
 
